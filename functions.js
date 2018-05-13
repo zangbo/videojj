@@ -1,7 +1,7 @@
 var ivaInstance = new Iva(
  "parent",//父容器id
  {
-   appkey: '410idWDt',//必填，请在控制台查看应用标识
+   appkey: 'rkTaW1I0M',//必填，请在控制台查看应用标识
    video: 'http://7xikp8.com1.z0.glb.clouddn.com/bunny.mp4',//必填，播放地址（例如：http://v.youku.com/v_show/id_XMTY5NDg2MzY5Ng==.html）
    title: '小视频',//选填，建议填写方便后台数据统计
    cover: '',//选填，视频封面url
