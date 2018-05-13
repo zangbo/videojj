@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Test Web for Videojj SDK</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <script type="text/javascript" src="//cytroncdn.videojj.com/latest/cytron.core.js"></script>
+    <style type="text/css">
+        body{margin:0px;}
+    </style>
+</head>
+<script type="text/javascript">
+var ivaInstance = new Iva(
+ 'parent',//父容器id
+ {
+   appkey: '410idWDt',//必填，请在控制台查看应用标识
+   video: 'http://7xikp8.com1.z0.glb.clouddn.com/bunny.mp4',//必填，播放地址（例如：http://v.youku.com/v_show/id_XMTY5NDg2MzY5Ng==.html）
+   title: '小视频',//选填，建议填写方便后台数据统计
+   cover: '',//选填，视频封面url
+   playerUrl: '', //选填，第三方播放器与Video++互动层的桥接文件，由Video++官方定制提供，默认为空
+   videoStartPrefixSeconds: 0,//选填，跳过片头，默认为0
+   videoEndPrefixSeconds: 0,//选填，跳过片尾，默认为0
+   /* 以下参数可以在“控制台->项目看板->应用管理->播放器设置” >进行全局设置，前端设置可以覆盖全局设置 */
+   skinSelect: 0,//选填，播放器皮肤，可选0、1、2，默认为0，
+   autoplay: false,//选填，是否自动播放，默认为false
+   rightHand: true,//选填，是否开启右键菜单，默认为false
+   autoFormat: false,//选填，是否自动选择最高清晰度，默认为false
+   bubble: true,//选填，是否开启云泡功能，默认为true
+   jumpStep: 10,//选填，左右方向键快退快进的时间
+   tagTrack: false,//选填，云链是否跟踪，默认为false
+   tagShow: false,//选填，云链是否显示，默认为false
+   tagDuration: 5,//选填，云链显示时间，默认为5秒
+   tagFontSize: 16,//选填，云链文字大小，默认为16像素
+   editorEnable: true, // 选填，当用户登录之后，是否允许加载编辑器，默认为true
+   vorEnable: true, // 选填，是否允许加载灵悟，默认为true
+   vorStartGuideEnable: true //选填， 是否启用灵悟新人引导，默认为true
+ }
+);
+</script>
+
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                <a class="navbar-brand" href="#">Video++ SDK test</a>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div class="starter-template">
+            <h1>The test for video++ SDK</h1>
+            <p class="lead">The video choose is JiXianTiaoZhan.</p>
+        </div>
+        <div id="parent" style="width:748px;height:421px;"></div>
+    </div>
+    <!-- /.container -->
+
+    <!-- Bootstrap core JavaScript
+================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+
+</html>
