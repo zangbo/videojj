@@ -2,7 +2,7 @@ var ivaInstance = new Iva(
  "parent",//父容器id
  {
    appkey: 'rkTaW1I0M',//必填，请在控制台查看应用标识
-   video: 'http://v.youku.com/v_show/id_XMzU5OTU0MjQ2MA==.html',//必填，播放地址（例如：http://v.youku.com/v_show/id_XMTY5NDg2MzY5Ng==.html）
+   video: 'https://www.mgtv.com/b/321652/4384666.html',//必填，播放地址（例如：http://v.youku.com/v_show/id_XMTY5NDg2MzY5Ng==.html）
    title: '极限挑战',//选填，建议填写方便后台数据统计
    cover: '',//选填，视频封面url
    playerUrl: '', //选填，第三方播放器与Video++互动层的桥接文件，由Video++官方定制提供，默认为空
